@@ -1,0 +1,88 @@
+body {
+    background: #121212;
+    color: #fff;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+.navbar {
+    background: #181818 !important;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+.card {
+    background: #232323;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    transition: transform 0.2s;
+}
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 16px rgba(255,193,7,0.2);
+}
+.card-title {
+    color: #ffc107;
+    font-weight: bold;
+}
+.btn-warning, .btn-danger {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.btn-warning {
+    background: #ffc107;
+    border: none;
+    color: #121212;
+}
+.btn-warning:hover {
+    background: #ff9800;
+    color: #fff;
+}
+.btn-danger {
+    background: #e50914;
+    border: none;
+}
+.btn-danger:hover {
+    background: #b0060f;
+}
+#asientos {
+    min-height: 60px;
+}
+.asiento {
+    width: 36px;
+    height: 36px;
+    border-radius: 6px;
+    background: #232323;
+    border: 2px solid #ffc107;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 2px;
+    font-weight: bold;
+    color: #ffc107;
+    transition: background 0.2s, color 0.2s;
+}
+.asiento.selected {
+    background: #ffc107;
+    color: #121212;
+}
+.asiento.occupied {
+    background: #444;
+    color: #888;
+    border: 2px solid #444;
+    cursor: not-allowed;
+}
+#confirmacionReserva {
+    display: none;
+}
+@media (max-width: 767px) {
+    .card-title {
+        font-size: 1.1rem;
+    }
+    .navbar-brand {
+        font-size: 1.3rem;
+    }
+}
